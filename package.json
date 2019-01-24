@@ -1,0 +1,41 @@
+{
+  "name": "react-express-starter",
+  "version": "1.0.0",
+  "description": "Create a new application with React(front-end) and Express(back-end).",
+  "main": "./lib/index.js",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "current-dir": "^1.0.0",
+    "fs-extra": "^7.0.1",
+    "questions": "^0.0.6",
+    "shelljs": "^0.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taka-wwjd/react-express-starter.git"
+  },
+  "author": "taka-wwjd",
+  "preferGlobal": true,
+  "bin": {
+    "res": "./bin/starter.js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taka-wwjd/react-express-starter/issues"
+  },
+  "homepage": "https://github.com/taka-wwjd/react-express-starter#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "react",
+    "express",
+    "starter",
+    "generator",
+    "create"
+  ]
+}
