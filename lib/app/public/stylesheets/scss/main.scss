@@ -1,0 +1,27 @@
+@import 'fonts';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+.home {
+  font-weight: 300;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 50px 50px;
+  border-radius: 5px;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+}
+
+.name {
+  color: #61dafb;
+}
