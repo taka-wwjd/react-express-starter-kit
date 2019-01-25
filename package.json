@@ -20,7 +20,7 @@
   "author": "taka-wwjd",
   "preferGlobal": true,
   "bin": {
-    "res": "./bin/starter.js"
+    "rest": "./bin/starter.js"
   },
   "license": "MIT",
   "bugs": {
