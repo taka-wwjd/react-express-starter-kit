@@ -1,4 +1,4 @@
-# react-express-starter
+# react-express-starter-kit
 
 Create a new application with React(front-end) and Express(back-end).  
 This application builds a secure environment using APIkey authentication for frontend and backend API calls.
@@ -8,7 +8,7 @@ This application builds a secure environment using APIkey authentication for fro
 ### Install:
 
 ```
-npm install -g react-express-starter
+npm install -g react-express-starter-kit
 ```
 
 ### Create New Application
