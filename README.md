@@ -21,6 +21,14 @@ rest
 
 After answering some questions in interactive mode, new application will be generated.
 
+### Run Application
+
+Run the command in a directory of application root.
+
+```
+npm start
+```
+
 #### File Structure:
 
 ```
