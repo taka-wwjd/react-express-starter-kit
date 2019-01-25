@@ -34,7 +34,7 @@ class Welcome extends Component {
         <div className="name">
           <h1>Welcome to {this.state.name}</h1>
         </div>
-        <p>Powered by Express React Starter</p>
+        <p>Powered by React Express Starter Kit</p>
       </div>
     );
   }
