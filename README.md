@@ -1,11 +1,11 @@
 # react-express-starter-kit
 
 Create a new application with React(front-end) and Express(back-end).  
-This application builds a secure environment using APIkey authentication for frontend and backend API calls.
+This application builds a secure environment using API key authentication for front-end and back-end API calls.
 
 ## Getting Started
 
-### Install:
+### Install
 
 ```
 npm install -g react-express-starter-kit
@@ -21,15 +21,47 @@ rest
 
 After answering some questions in interactive mode, new application will be generated.
 
+#### MySQL Support Flag:
+
+If you need MySQL support, the following option are available.
+
+```
+rest -m
+```
+or 
+```
+rest --mysql
+```
+
 ### Run Application
 
 Run the command in a directory of application root.
+
+#### Production Mode:
 
 ```
 npm start
 ```
 
-#### File Structure:
+Specify the following option in webpack and start it.  
+
+`--mode production --devtool false`
+
+#### Development Mode:
+
+```
+npm run debug
+```
+
+Specify the following option in webpack and start it.  
+
+`--mode development --devtool inline-source-map --watch --progress`
+
+#### Other Modes:
+
+You can also changes webpack.config.js if necessary.
+
+### File Structure
 
 ```
 app
@@ -57,7 +89,7 @@ app
 * `routes`
   * A directory where Express router is stored.
 * `routes/name.js`
-  * It's a backend called from `views/Index/Welcome.jsx` and returning the application name.
+  * It's a back-end called from `views/Index/Welcome.jsx` and returning the application name.
 * `views`
   * A directory where React component is stored.
 * `views/Root.jsx`
@@ -67,19 +99,7 @@ app
 * `views/Index/Welcome.jsx`
   * A component file for drawing a welcome message on the index screen.
 
-#### MySQL Support Flag:
-
-If you need MySQL support, the following option are available.
-
-```
-rest -m
-```
-or 
-```
-rest --mysql
-```
-
-#### Module Versions:
+### Module Versions
 
 ```
 "devDependencies": {
@@ -122,7 +142,7 @@ rest -r
 ```
 
 After answering some questions in interactive mode, a new component will be added.  
-The file structure of React component is one screen 1 directory structure.  
+The file structure of React component is one screen one directory structure.  
 So, select the new or existing directory and enter the component name.
 
 ## Add Express Router
