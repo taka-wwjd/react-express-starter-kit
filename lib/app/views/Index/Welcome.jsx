@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import config from '../../config.js';
+
+import configApi from '../../config/api.js';
+
+axios.defaults.headers.common['api-key'] = configApi.key;
 
 class Welcome extends Component {
   constructor(props) {
@@ -11,11 +14,7 @@ class Welcome extends Component {
   }
 
   fetchName() {
-    axios.get('/name', {
-      params: {
-        apiKey: config.app.apiKey
-      }
-    }).then((response) => {
+    axios.get('/api/name').then((response) => {
       this.setState({
         name: response.data.name
       });

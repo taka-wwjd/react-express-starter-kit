@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import config from '../../config.js';
+
+import configApi from '../../config/api.js';
+
+axios.defaults.headers.common['api-key'] = configApi.key;
 
 class Template extends Component {
   constructor(props) {
@@ -13,11 +16,7 @@ class Template extends Component {
   // If you need an API connection to Express.
   // --------------------------------------------------
   // fetchData() {
-  //   axios.get('/PATH_TO_EXPRESS', {
-  //     params: {
-  //       apiKey: config.app.apiKey
-  //     }
-  //   }).then((response) => {
+  //   axios.get('/api/API_NAME').then((response) => {
   //     this.setState({
   //       data: response.data
   //     });
@@ -26,7 +25,7 @@ class Template extends Component {
   //   });
   // }
   // 
-  // componentWillMount() {
+  // componentDidMount() {
   //   this.fetchData();
   // }
 

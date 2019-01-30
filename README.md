@@ -1,7 +1,6 @@
 # react-express-starter-kit
 
-Create a new application with React(front-end) and Express(back-end).  
-This application builds a secure environment using API key authentication for front-end and back-end API calls.
+Create a new application with React(front-end) and Express(back-end).
 
 ## Getting Started
 
@@ -66,9 +65,11 @@ You can also changes webpack.config.js if necessary.
 ```
 app
 ├ app.js
-├ config.js
 ├ extension.js
 ├ webpack.config.js
+├ config
+│    ├ api.js
+│    └ app.js
 ├ public
 │    ├ index.html
 │    ├ fonts
@@ -78,7 +79,7 @@ app
 │        └ scss
 │        ├ _fonts.scss
 │        └ main.scss
-├ routes
+├ api
 │    └ name.js
 └ views
      ├ Root.jsx
@@ -86,9 +87,19 @@ app
           └ Welcome.jsx
 ```
 
-* `routes`
+* `config`
+  * A directory where application configure is stored.
+* `config/api.js`
+  * Contains the api key for simple authentication of front-end and back-end connection.
+  * This authentication is a simple one that prevents backend output from being drawn directly in the browser.
+  * In fact, the build output of webpack contains the key as is.
+* `config/app.js`
+  * Contains the configure for back-end application (and MySQL).
+  * You can add the necessary keys and values ​​freely to this file.
+  * Be careful not to call this file from the front-end so that setting information is not included in the build output of webpack.
+* `api`
   * A directory where Express router is stored.
-* `routes/name.js`
+* `api/name.js`
   * It's a back-end called from `views/Index/Welcome.jsx` and returning the application name.
 * `views`
   * A directory where React component is stored.
