@@ -1,6 +1,6 @@
 {
   "name": "react-express-starter-kit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Create a new application with React(front-end) and Express(back-end).",
   "main": "./lib/index.js",
   "dependencies": {

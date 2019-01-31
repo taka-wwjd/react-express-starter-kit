@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import configApi from '../../config/api.js';
+import appConfig from '../../../app.config.js';
 
-axios.defaults.headers.common['api-key'] = configApi.key;
+axios.defaults.headers.common['api-key'] = appConfig.apiKey;
 
 class Welcome extends Component {
   constructor(props) {

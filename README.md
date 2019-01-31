@@ -65,50 +65,57 @@ You can also changes webpack.config.js if necessary.
 ```
 app
 ├ app.js
-├ extension.js
+├ app.config.js
 ├ webpack.config.js
-├ config
-│    ├ api.js
-│    └ app.js
-├ public
-│    ├ index.html
-│    ├ fonts
-│    ├ images
-│    ├ javascripts
-│    └ stylesheets
-│        └ scss
-│        ├ _fonts.scss
-│        └ main.scss
 ├ api
-│    └ name.js
-└ views
-     ├ Root.jsx
-     └ Index
-          └ Welcome.jsx
+│  ├ name.js
+│  └ lib
+│      ├ db.config.js
+│      └ extension.js
+└ src
+    ├ public
+    │  ├ index.html
+    │  ├ fonts
+    │  ├ images
+    │  ├ javascripts
+    │  └ stylesheets
+    │       └ scss
+    │           ├ _fonts.scss
+    │           └ main.scss
+    └ views
+        ├ Root.jsx
+        └ Index
+            └ Welcome.jsx
 ```
 
-* `config`
-  * A directory where application configure is stored.
-* `config/api.js`
-  * Contains the api key for simple authentication of front-end and back-end connection.
-  * This authentication is a simple one that prevents backend output from being drawn directly in the browser.
-  * In fact, the build output of webpack contains the key as is.
-* `config/app.js`
-  * Contains the configure for back-end application (and MySQL).
-  * You can add the necessary keys and values ​​freely to this file.
-  * Be careful not to call this file from the front-end so that setting information is not included in the build output of webpack.
-* `api`
-  * A directory where Express router is stored.
-* `api/name.js`
-  * It's a back-end called from `views/Index/Welcome.jsx` and returning the application name.
-* `views`
-  * A directory where React component is stored.
-* `views/Root.jsx`
-  * The base file from which routing starts.
-* `views/Index`
-  * A directory for storing the components of the index screen to be displayed when accessing the root path /.
-* `views/Index/Welcome.jsx`
-  * A component file for drawing a welcome message on the index screen.
+* **app.config.js**
+  * Configure for common references from React(front-end) and Express(back-end).
+  * You can also add new key and value as needed.
+  * **ATTENTION**  
+  This file contain API key for validate of  React(front-end) and Express(back-end) between connection.  
+  Please note that this authentication is a simple one that prevents Express(back-end) output from being drawn directly in the browser.  
+  In fact, the build output of webpack contains API key as is.
+* **api/**
+  * Express(back-end) routers is stored.
+* **api/name.js**
+  * Express(back-end) router called from `views/Index/Welcome.jsx` and returning the application name.
+* **api/lib/**
+  * Configure and extend files is stored.
+* **api/lib/db.config.js**
+  * Configure for MySQL access(If you needed).
+  * Be careful not to require or import this file from React(front-end) so that database authentication ID/PASS is not included in the build output of webpack.
+* **api/lib/extension.js**
+  * Contains extend functions used by Express (back-end).
+  * You can also add new functions as needed.
+* **views/**
+  * React(front-end) component directories is stored.
+  * Create directories in this hierarchy for each page required by the application.
+* **views/Root.jsx**
+  * React(front-end) routing starts point.
+* **views/Index**
+  * React(front-end) components is stored of the index screen to be displayed when accessing the root path /.
+* **views/Index/Welcome.jsx**
+  * React(front-end) component for drawing a welcome message on the index screen.
 
 ### Module Versions
 
