@@ -64,25 +64,25 @@ You can also changes webpack.config.js if necessary.
 
 ```
 app
-├ app.js
-├ app.config.js
-├ webpack.config.js
-├ api
-│  ├ name.js
-│  └ lib
-│      ├ db.config.js
-│      └ extension.js
-└ src
-    ├ public
-    │  ├ index.html
-    │  ├ fonts
-    │  ├ images
-    │  ├ javascripts
-    │  └ stylesheets
-    │       └ scss
-    │           ├ _fonts.scss
-    │           └ main.scss
-    └ views
+ ├ app.js
+ ├ app.config.js
+ ├ webpack.config.js
+ ├ api
+ │  ├ name.js
+ │  └ lib
+ │      ├ db.config.js
+ │      └ extension.js
+ └ src
+     ├ public
+     │  ├ index.html
+     │  ├ fonts
+     │  ├ images
+     │  ├ javascripts
+     │  └ stylesheets
+     │       └ scss
+     │           ├ _fonts.scss
+     │           └ main.scss
+     └ views
         ├ Root.jsx
         └ Index
             └ Welcome.jsx
