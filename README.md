@@ -121,15 +121,15 @@ app
 
 ```
 "devDependencies": {
-  "@babel/core": "^7.2.2",
-  "@babel/preset-env": "^7.2.2",
+  "@babel/core": "^7.3.4",
+  "@babel/preset-env": "^7.3.4",
   "@babel/preset-react": "^7.0.0",
-  "@babel/plugin-proposal-class-properties": "^7.2.2",
+  "@babel/plugin-proposal-class-properties": "^7.3.4",
   "babel-loader": "^8.0.5",
-  "webpack": "^4.28.4",
-  "webpack-cli": "^3.2.1",
+  "webpack": "^4.29.6",
+  "webpack-cli": "^3.2.3",
   "concurrently": "^4.1.0",
-  "nodemon": "^1.18.9",
+  "nodemon": "^1.18.10",
   "file-loader": "^3.0.1",
   "url-loader": "^1.1.2",
   "style-loader": "^0.23.1",
@@ -139,14 +139,14 @@ app
 },
 "dependencies": {
   "axios": "^0.18.0",
-  "helmet": "^3.15.0",
+  "helmet": "^3.15.1",
   "express": "^4.16.4",
-  "react": "^16.7.0",
-  "react-dom": "^16.7.0",
+  "react": "^16.8.3",
+  "react-dom": "^16.8.3",
   "react-router": "^4.3.1",
   "react-router-dom": "^4.3.1",
   "body-parser": "^1.18.3",
-  "cookie-parser": "^1.4.3",
+  "cookie-parser": "^1.4.4",
   "mysql": "^2.16.0" // If you need MySQL support.
 },
 ```
