@@ -121,33 +121,33 @@ app
 
 ```
 "devDependencies": {
-  "@babel/core": "^7.3.4",
-  "@babel/preset-env": "^7.3.4",
+  "@babel/core": "^7.4.4",
+  "@babel/preset-env": "^7.4.4",
   "@babel/preset-react": "^7.0.0",
-  "@babel/plugin-proposal-class-properties": "^7.3.4",
-  "babel-loader": "^8.0.5",
-  "webpack": "^4.29.6",
-  "webpack-cli": "^3.2.3",
+  "@babel/plugin-proposal-class-properties": "^7.4.4",
+  "babel-loader": "^8.0.6",
+  "webpack": "^4.31.0",
+  "webpack-cli": "^3.3.2",
   "concurrently": "^4.1.0",
-  "nodemon": "^1.18.10",
+  "nodemon": "^1.19.10",
   "file-loader": "^3.0.1",
   "url-loader": "^1.1.2",
   "style-loader": "^0.23.1",
-  "css-loader": "^2.1.0",
+  "css-loader": "^2.1.1",
   "sass-loader": "^7.1.0",
-  "node-sass": "^4.11.0"
+  "node-sass": "^4.12.0"
 },
 "dependencies": {
   "axios": "^0.18.0",
-  "helmet": "^3.15.1",
-  "express": "^4.16.4",
-  "react": "^16.8.3",
-  "react-dom": "^16.8.3",
-  "react-router": "^4.3.1",
-  "react-router-dom": "^4.3.1",
-  "body-parser": "^1.18.3",
-  "cookie-parser": "^1.4.4",
-  "mysql": "^2.16.0" // If you need MySQL support.
+  "helmet": "^3.18.0",
+  "express": "^4.17.0",
+  "react": "^16.8.6",
+  "react-dom": "^16.8.6",
+  "react-router": "^5.0.0",
+  "react-router-dom": "^5.0.0",
+  "body-parser": "^1.19.0",
+  "cookie-parser": "^1.4.4"
+  "mysql": "^2.17.1" // If you need MySQL support.
 },
 ```
 
