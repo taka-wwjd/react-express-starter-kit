@@ -129,7 +129,7 @@ app
   "webpack": "^4.31.0",
   "webpack-cli": "^3.3.2",
   "concurrently": "^4.1.0",
-  "nodemon": "^1.19.10",
+  "nodemon": "^1.19.0",
   "file-loader": "^3.0.1",
   "url-loader": "^1.1.2",
   "style-loader": "^0.23.1",
