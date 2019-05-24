@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-var starter = require('../lib/index.js');
+var starter = require('../lib/index.js')
 
-starter.run();
+starter.run()

@@ -146,7 +146,8 @@ app
   "react-router": "^5.0.0",
   "react-router-dom": "^5.0.0",
   "body-parser": "^1.19.0",
-  "cookie-parser": "^1.4.4"
+  "cookie-parser": "^1.4.4",
+  "path": "^0.12.7"
   "mysql": "^2.17.1" // If you need MySQL support.
 },
 ```
