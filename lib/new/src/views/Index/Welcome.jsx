@@ -13,7 +13,7 @@ class Welcome extends Component {
     }
   }
 
-  fetchName () {
+  fetchName = () => {
     axios.get('/api/name').then((response) => {
       this.setState({
         name: response.data.name
@@ -23,7 +23,7 @@ class Welcome extends Component {
     })
   }
 
-  componentWillMount () {
+  componentDidMount = () => {
     this.fetchName()
   }
 
