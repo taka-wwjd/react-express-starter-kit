@@ -150,7 +150,6 @@ app
   "path": "^0.12.7"
   "mysql": "^2.17.1" // If you need MySQL support.
 }
-},
 ```
 
 ## Add React Component
