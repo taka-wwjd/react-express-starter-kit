@@ -125,6 +125,7 @@ app
   "@babel/preset-env": "^7.4.5",
   "@babel/preset-react": "^7.0.0",
   "@babel/plugin-proposal-class-properties": "^7.4.4",
+  "@babel/plugin-syntax-dynamic-import": "^7.2.0",
   "babel-loader": "^8.0.6",
   "webpack": "^4.35.0",
   "webpack-cli": "^3.3.5",
